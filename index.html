@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Bootstrap CDN icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="main-header">
+        <h1 class="main-title">Mon panier</h1>
+        <a href="" class="link">Retour a la boutique</a>
+      </div>
+
+      <div>
+        <table class="main-table">
+          <thead>
+            <tr>
+              <th>Produit</th>
+              <th>Prix</th>
+              <th>Quantite</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="product-row">
+              <td>
+                <!--product-!-->
+                <div class="product">
+                  <img src="./img/shoes-1.jpg" />
+                  <div class="product-details" >
+                    <h3 class="product-details-name">Vans Senegal 542</h3>
+                    <button class="button-icon product-delete"><i class="bi bi-trash3-fill"></i></button>
+                    <button class="button-icon  product-like">
+                      <i class="bi bi-heart"></i></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+
+              <td class="product-price">18000 CFA</td>
+              <td>
+                <div class="product-counter">
+                  <button class="counter-minus"><i class="bi bi-dash"></i></button>
+                  <span class="counter-qty">1</span>
+                  <button class="counter-plus"><i class="bi bi-plus"></i></button>
+                </div>
+              </td>
+              <td class="product-total">18000 CFA</td>
+            </tr>
+            
+            <tr class="product-row">
+              <td>
+                <!--product-2-->
+                <div class="product">
+                  <img src="./img/shoes-2.jpg" />
+                  <div class="product-details" >
+                    <h3 class="product-details-name">Basket PUMA</h3>
+                    <button class="button-icon product-delete"><i class="bi bi-trash3-fill"></i></button>
+                    <button class="button-icon  product-like">
+                      <i class="bi bi-heart"></i></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+
+              <td class="product-price">25000 CFA</td>
+              <td>
+                <div class="product-counter">
+                  <button class="counter-minus"><i class="bi bi-dash"></i></button>
+                  <span class="counter-qty">1</span>
+                  <button class="counter-plus"><i class="bi bi-plus"></i></button>
+                </div>
+              </td>
+              <td class="product-total">25000 CFA</td>
+            </tr>
+            <tr class="product-row">
+              <td>
+                <!--product-3-->
+                <div class="product">
+                  <img src="./img/shoes-3.jpg" />
+                  <div class="product-details" >
+                    <h3 class="product-details-name">Air Nike 42</h3>
+                    <button class="button-icon product-delete"><i class="bi bi-trash3-fill"></i></button>
+                    <button class="button-icon  product-like">
+                      <i class="bi bi-heart"></i></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+
+              <td class="product-price">22000 CFA</td>
+              <td>
+                <div class="product-counter">
+                  <button class="counter-minus"><i class="bi bi-dash"></i></button>
+                  <span class="counter-qty">1</span>
+                  <button class="counter-plus"><i class="bi bi-plus"></i></button>
+                </div>
+              </td>
+              <td class="product-total">22000 CFA</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">
+                <div class="total-container">
+                  <h4>Sous-total</h4>
+                  <h4 id="subTotal">10000 CFA</h4>
+                  <div>
+                    <button>Valider la commande</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
+    <script src="index.js"></script> <!--link to javascript-->
+  </body>
+</html>
